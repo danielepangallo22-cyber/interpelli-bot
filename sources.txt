@@ -1,0 +1,15 @@
+# Una fonte per riga:  Nome | URL
+# Puo' essere un feed RSS, una pagina "Interpelli"/"Avvisi" o l'Albo online.
+# Per avere copertura nazionale conviene aggiungere la pagina interpelli
+# di ogni Ufficio Scolastico Provinciale (USP) che ti interessa.
+
+# Aggregatori nazionali (filtro automatico sulla parola "interpell")
+Orizzonte Scuola | https://www.orizzontescuola.it/feed/
+Tecnica della Scuola | https://www.tecnicadellascuola.it/feed
+
+# Esempio USP (Emilia-Romagna, siti WordPress con feed)
+USP Ravenna | https://ra.istruzioneer.gov.it/feed/
+
+# Aggiungi qui le tue fonti, ad esempio:
+# USP Messina | https://<sito-usp>/category/interpelli/
+# IC Esempio  | https://<sito-scuola>/albo-online/
