@@ -44,7 +44,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
 TIMEOUT = 20
-KEYWORD = re.compile(r"interpell", re.I)
+# "interpell..." ovunque; "ricerca supplent..." e' la formula usata in Lombardia
+KEYWORD = re.compile(r"interpell|ricerca[\s_-]*supplent", re.I)
 MAX_SEEN = 20000  # limite per non far crescere seen.json all'infinito
 
 
