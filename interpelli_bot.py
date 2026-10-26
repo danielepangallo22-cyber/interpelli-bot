@@ -173,16 +173,27 @@ def main() -> None:
     first_run = not seen
     include, exclude = env_list("INCLUDE_KEYWORDS"), env_list("EXCLUDE_KEYWORDS")
 
+    # Fonti gia' inizializzate: per quelle nuove memorizziamo gli avvisi
+    # esistenti senza notificarli (evita valanghe di messaggi vecchi).
+    known_src = set(seen.pop("_sources", []))
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        results = list(pool.map(lambda s: (s, scan_source(s[1])), sources))
+
     new_items = []
-    for name, url in sources:
-        print(f"- {name}")
-        for it in scan_source(url):
+    for (name, url), items in results:
+        print(f"- {name}: {len(items)} link")
+        fresh_source = url not in known_src
+        for it in items:
             iid = item_id(it["link"], it["title"])
             if iid in seen:
                 continue
             seen[iid] = int(time.time())
-            if passes_filters(it, include, exclude):
+            if not fresh_source and passes_filters(it, include, exclude):
                 new_items.append((name, it))
+        if items:
+            known_src.add(url)
 
     if first_run:
         # Primo avvio: memorizza tutto senza notificare, altrimenti arriverebbero
@@ -195,6 +206,9 @@ def main() -> None:
         print(f"Nuovi interpelli notificati: {len(new_items)}")
 
     save_seen(seen_path, seen)
+    data = json.loads(seen_path.read_text(encoding="utf-8"))
+    data["_sources"] = sorted(known_src)
+    seen_path.write_text(json.dumps(data, ensure_ascii=False, indent=0), encoding="utf-8")
 
 
 if __name__ == "__main__":
