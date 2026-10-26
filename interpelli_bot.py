@@ -33,7 +33,16 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
-UA = "Mozilla/5.0 (InterpelliBot; +https://github.com/)"
+import warnings
+import urllib3
+from bs4 import MarkupResemblesLocatorWarning
+
+warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# User-Agent da browser vero: alcuni siti USP bloccano i bot (errore 403)
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
 TIMEOUT = 20
 KEYWORD = re.compile(r"interpell", re.I)
 MAX_SEEN = 20000  # limite per non far crescere seen.json all'infinito
@@ -80,8 +89,14 @@ def load_sources(path: Path) -> list[tuple[str, str]]:
 
 
 def fetch(url: str) -> requests.Response | None:
+    headers = {"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9"}
     try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT)
+        try:
+            r = requests.get(url, headers=headers, timeout=TIMEOUT)
+        except requests.exceptions.SSLError:
+            # Molti siti ministeriali (es. tutta la Lombardia) hanno certificati
+            # scaduti o autofirmati: leggiamo comunque la pagina pubblica.
+            r = requests.get(url, headers=headers, timeout=TIMEOUT, verify=False)
         r.raise_for_status()
         return r
     except requests.RequestException as e:

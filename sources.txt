@@ -9,11 +9,11 @@ Tecnica della Scuola | https://www.tecnicadellascuola.it/feed
 
 # Uffici Scolastici Provinciali e Regionali (pagine interpelli)
 Agrigento | https://ag.usr.sicilia.it/category/personale-scuola/personale-docente/interpelli/
-Alessandria | https://servizi.istruzionepiemonte.it/interpello2024/ric_interpello_ambito_al.php
+Alessandria | https://www.istruzionepiemonte.it/alessandria/interpelli-supplenze/
 Ancona | https://www.istruzione-ancona.it/category/docenti/
 Arezzo | https://www.arezzoistruzione.it/usparezzo/index.php/interpelli
 Ascoli Piceno e Fermo | https://www.uspascolipiceno.it/wordpress/interpelli/
-Asti | https://servizi.istruzionepiemonte.it/interpello2024/ric_interpello_ambito_at.php
+Asti | https://www.istruzionepiemonte.it/asti/interpelli-supplenze/
 Avellino | https://atavellino.it/
 Bari | https://www.uspbari.it/usp/pubblicazione-decreti-e-sentenze
 Barletta Andria Trani | https://www.istruzionebat.it/category/interpello/
@@ -63,24 +63,24 @@ Modena | https://mo.istruzioneer.gov.it/category/interpelli-personale-docente-20
 Monza e Brianza | https://monza.istruzionelombardia.gov.it/argomento/interpelli-ricerca-supplenti
 Napoli | https://www.uat-napoli.it/tag/interpelli-personale-docente/
 Novara | https://www.istruzionepiemonte.it/novara/interpelli-supplenze/
-Nuoro | https://www.csanuoro.it/wp2019/interpelli-as-2024-2025
-Oristano | https://lnx.csaoristano.it/category/reclutamento/
+Nuoro | https://www.csanuoro.it/
+Oristano | https://www.docenti.it/interpelli/interpelli-oristano.html
 Padova | https://padova.istruzioneveneto.gov.it/category/interpelli-personale-docente/
 Palermo e Ragusa (USR Sicilia) | https://www.usr.sicilia.it/category/personale-scuola/docenti/interpelli-nazionali-contratti-a-tempo-determinato-docenti/
-Parma | https://pr.istruzioneer.gov.it/interpelli-2/
+Parma | https://pr.istruzioneer.gov.it/
 Pavia | https://pavia.istruzionelombardia.gov.it/argomento/interpelli-ricerca-supplenti
-Perugia e Terni | https://istruzione.umbria.it/interpello-personale-scolastico/
+Perugia e Terni | https://istruzione.umbria.it/
 Pesaro e Urbino | http://www.usppesarourbino.it/category/interpelli/
 Piacenza | https://pc.istruzioneer.gov.it/interpelli/
-Pisa | https://www.toscana-istruzione.it/atpisa/category/news/
+Pisa | https://www.toscana-istruzione.it/atpisa/
 Pistoia | https://www.ufficioscolasticoprovinciale.pistoia.it/category/docenti/
 Pordenone | https://www.usrfvg.gov.it/it/home/menu/uffici/ufficio-territoriale-di-pordenone/
 Prato | https://www.ufficioscolasticoprovinciale.prato.it/Mese/nomine-a-tempo-determinato/
 Ravenna | https://ra.istruzioneer.gov.it/conferimento-supplenze-per-esaurimento-graduatorie-di-istituto/
 Reggio Calabria | https://www.istruzioneatprc.it/category/recl/int/
 Reggio Emilia | https://re.istruzioneer.gov.it/category/docenti/
-Rieti | https://www.usp-rieti.it/it/302-docenti/interpelli-supplenze-altre-province.html
-Rimini | https://rn.istruzioneer.gov.it/category/personale-docente/interpelli_docenti/
+Rieti | https://www.usp-rieti.it/
+Rimini | https://rn.istruzioneer.gov.it/
 Roma | https://www.atpromaistruzione.it/atp/category/reclutamento/interpelli-personale-docente/
 Rovigo | https://rovigo.istruzioneveneto.gov.it/category/5-interpelli/docenti-rovigo/
 Salerno | https://uat-salerno.it/Documenti/CIRCOLARI/Interpelli-per-reclutamento-personale-docente
@@ -97,9 +97,29 @@ Treviso | https://treviso.istruzioneveneto.gov.it/tag/interpelli-istituti-scolas
 Trieste e Udine | https://usrfvg.gov.it/it/home/menu/uffici/ufficio-territoriale-di-udine/
 Varese | https://varese.istruzionelombardia.gov.it/argomento/interpelli-ricerca-supplenti-2/
 Venezia | https://venezia.istruzioneveneto.gov.it/argomenti/personale/docenti/interpelli/
-Verbano Cusio Ossola | https://servizi.istruzionepiemonte.it/interpello2024/ric_interpello_ambito_vb.php
-Verona | https://win.istruzioneverona.it/uspvr/index.php/interpelli-docenti/
-Vercelli | https://www.istruzionepiemonte.it/vercelli/tag/interpelli-supplenze/
+USR Piemonte | https://www.istruzionepiemonte.it/
+Verona | https://verona.istruzioneveneto.gov.it/
+Vercelli | https://www.istruzionepiemonte.it/vercelli/interpelli-supplenze/
 Vibo Valentia | https://www.istruzione.calabria.it/vibovalentia/
 Vicenza | https://vicenza.istruzioneveneto.gov.it/avvisi-interpelli-docenti-vicenza/
 Viterbo | http://www.provveditoratostudiviterbo.it/DOCENTI/interpelli/INTERPELLIDOC.htm
+
+# Riserva: pagine provinciali di Docenti.it per le province con siti difficili
+Docenti.it Alessandria | https://www.docenti.it/interpelli/interpelli-alessandria.html
+Docenti.it Asti | https://www.docenti.it/interpelli/interpelli-asti.html
+Docenti.it Vercelli | https://www.docenti.it/interpelli/interpelli-vercelli.html
+Docenti.it Nuoro | https://www.docenti.it/interpelli/interpelli-nuoro.html
+Docenti.it Perugia | https://www.docenti.it/interpelli/interpelli-perugia.html
+Docenti.it Terni | https://www.docenti.it/interpelli/interpelli-terni.html
+Docenti.it Pisa | https://www.docenti.it/interpelli/interpelli-pisa.html
+Docenti.it Parma | https://www.docenti.it/interpelli/interpelli-parma.html
+Docenti.it Rieti | https://www.docenti.it/interpelli/interpelli-rieti.html
+Docenti.it Rimini | https://www.docenti.it/interpelli/interpelli-rimini.html
+Docenti.it Verona | https://www.docenti.it/interpelli/interpelli-verona.html
+Docenti.it Firenze | https://www.docenti.it/interpelli/interpelli-firenze.html
+Docenti.it Macerata | https://www.docenti.it/interpelli/interpelli-macerata.html
+Docenti.it Frosinone | https://www.docenti.it/interpelli/interpelli-frosinone.html
+Docenti.it Benevento | https://www.docenti.it/interpelli/interpelli-benevento.html
+Docenti.it Cagliari | https://www.docenti.it/interpelli/interpelli-cagliari.html
+Docenti.it Latina | https://www.docenti.it/interpelli/interpelli-latina.html
+Docenti.it Catanzaro | https://www.docenti.it/interpelli/interpelli-catanzaro.html
